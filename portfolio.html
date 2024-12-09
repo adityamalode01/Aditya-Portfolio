@@ -1,0 +1,260 @@
+<style>
+  .profile-container {
+    background-color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    padding: 0 50px 58px;
+  }
+  .flex-row {
+    gap: 20px;
+    display: flex;
+  }
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+  }
+  .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    font-family: Jost, sans-serif;
+    margin: auto 0;
+  }
+  .title-container {
+    display: flex;
+    margin-left: 74px;
+    width: 359px;
+    max-width: 100%;
+    flex-direction: column;
+    font-weight: 600;
+  }
+  .title-text {
+    color: rgba(68, 87, 81, 1);
+    font-size: 128px;
+    line-height: 84px;
+    align-self: start;
+  }
+  .designer-text {
+    color: rgba(105, 225, 189, 1);
+    font-size: 79px;
+    line-height: 1;
+    margin-top: 21px;
+  }
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    border-radius: 105px;
+    position: relative;
+    min-height: 427px;
+    margin-top: 186px;
+    width: 100%;
+    align-items: start;
+    padding: 10px 0 10px 67px;
+  }
+  .profile-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about-title {
+    position: relative;
+    color: rgba(161, 161, 161, 1);
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1;
+    margin-left: 20px;
+  }
+  .bio-text {
+    position: relative;
+    color: rgba(0, 0, 0, 1);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 59px;
+    margin-top: 26px;
+  }
+  .indicator {
+    position: relative;
+    border-radius: 73px;
+    background-color: rgba(11, 11, 11, 1);
+    align-self: end;
+    display: flex;
+    margin-top: 23px;
+    width: 54px;
+    height: 34px;
+  }
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 67%;
+    margin-left: 20px;
+  }
+  .content-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .content-container {
+    width: 1107px;
+    max-width: 100%;
+  }
+  .image-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 56%;
+  }
+  .image-wrapper {
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 72px 80px;
+  }
+  .circular-image {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    position: relative;
+    aspect-ratio: 0.954;
+    justify-content: center;
+    padding: 63px 52px;
+  }
+  .profile-photo {
+    aspect-ratio: 1.01;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    border-radius: 110px;
+  }
+  .text-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 44%;
+    margin-left: 20px;
+  }
+  .description {
+    color: rgba(51, 51, 51, 1);
+    align-self: stretch;
+    margin: auto 0;
+    font: 600 40px/40px Jost, sans-serif;
+  }
+  .bottom-section {
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    height: 502px;
+  }
+  @media (max-width: 991px) {
+    .profile-container { padding: 0 20px; }
+    .flex-row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+    .left-column, .right-column, .image-column, .text-column { width: 100%; }
+    .title-wrapper {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+    .title-container { margin-left: 10px; }
+    .title-text {
+      font-size: 40px;
+      line-height: 29px;
+    }
+    .designer-text { font-size: 40px; }
+    .profile-info {
+      max-width: 100%;
+      padding-left: 20px;
+      margin-top: 40px;
+    }
+    .about-title { margin-left: 10px; }
+    .bio-text { max-width: 100%; }
+    .content-wrapper { max-width: 100%; }
+    .image-wrapper {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+    .circular-image { padding: 0 20px; }
+    .description {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+    .bottom-section { max-width: 100%; }
+  }
+</style>
+
+<div class="profile-container">
+  <div class="flex-row">
+    <div class="left-column">
+      <div class="title-wrapper">
+        <div class="title-container">
+          <div class="title-text">
+            U<span class="large-text">I</span>U<span class="large-text">X</span>
+          </div>
+          <div class="designer-text">
+            <span class="large-text">D</span>esigner
+          </div>
+        </div>
+        <div class="profile-info">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/1eb9013f37d55f93aba95a503e18ebb12f71f6b93fad8d6fc708d829a0b8c9bb?placeholderIfAbsent=true&apiKey=fb391850cd7f4156b7d4cdc57cb91786"
+            class="profile-image"
+            alt="Designer profile background"
+          />
+          <div class="about-title">About Me</div>
+          <div class="bio-text">
+            <span class="large-text">Aditya Malode</span>
+            Available for freelancer & fulltime
+            UI UX Designer,Web Designer
+            Nagpur maharashtra,India
+          </div>
+          <div class="indicator" role="presentation"></div>
+        </div>
+      </div>
+    </div>
+    <div class="right-column">
+      <div class="content-wrapper">
+        <div class="content-container">
+          <div class="flex-row">
+            <div class="image-column">
+              <div class="image-wrapper">
+                <div class="circular-image">
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/f576d9e0b7a383337ab1b33e9804280c714de12c83b6790f6c372ac7889f43fc?placeholderIfAbsent=true&apiKey=fb391850cd7f4156b7d4cdc57cb91786"
+                    class="profile-image"
+                    alt="Designer profile image"
+                  />
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/fb1c980101c99ab54b216ced066bb55fdf83947e0fc9785fdc02a9758d16f154?placeholderIfAbsent=true&apiKey=fb391850cd7f4156b7d4cdc57cb91786"
+                    class="profile-photo"
+                    alt="Designer portrait"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="text-column">
+              <div class="description">
+                Nagpur-based graphic designer specializing in creating engaging
+                social media content and eye-catching print designs.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-section" role="presentation"></div>
+      </div>
+    </div>
+  </div>
+</div>
