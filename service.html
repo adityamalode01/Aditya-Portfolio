@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <link rel="shortcut icon" type="website icon" href="bobo.png">
+    <link rel="shortcut icon" type="website icon" href="bobo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services</title>
@@ -14,13 +14,33 @@
             padding: 0;
         }
         .services-header {
+            position: relative;
             text-align: center;
-            padding: 50px 20px;
+            padding: 100px 20px;
             background: #8c6c93;
             color: white;
+            overflow: hidden;
         }
         .services-header h1 {
             font-size: 2.5rem;
+            z-index: 2;
+            position: relative;
+        }
+        .services-header p {
+            z-index: 2;
+            position: relative;
+        }
+        .services-header .right-image {
+            position: absolute;
+            top: 79%;
+            transform: translateY(-50%);
+            opacity: 1;
+            z-index: ;
+        }
+        .services-header .right-image {
+            right: 0;
+            max-width: 300px;
+            margin-right: 50px;
         }
         .service-card {
             transition: transform 0.3s, box-shadow 0.3s;
@@ -59,6 +79,7 @@
     <header class="services-header">
         <h1>Our Services</h1>
         <p>Explore the wide range of services we offer to cater to your needs.</p>
+        <img src="Service image.png" alt="Right Design" class="right-image">
     </header>
 
     <div class="container py-5">
@@ -107,7 +128,7 @@
                         <option>Web Design</option>
                         <option>UI/UX Design</option>
                         <option>Graphic Designer</option>
-                          <option>Logo Design</option>
+                        <option>Logo Design</option>
                     </select>
                 </div>
                 <div class="mb-3">
