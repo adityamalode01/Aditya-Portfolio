@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color:#ffffff;
+            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
         }
@@ -81,10 +81,33 @@
     </style>
 </head>
 <body>
-    <header class="experience-header">
-        <h1>My Experience</h1>
-        <p>A glimpse into my professional journey and milestones.</p>
+    <header class="experience-header d-flex align-items-center justify-content-center">
+        <img src="eye.png" alt="Experience Image" class="experience-image me-4">
+        <div>
+            <h1>My Experience</h1>
+            <p>A glimpse into my professional journey and milestones.</p>
+        </div>
     </header>
+    
+    <style>
+        .experience-header {
+            text-align: center;
+            padding: 3px 20px;
+            background-color: #4facb0;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .experience-header img {
+            width: 300px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+    </style>
+    
 
     <div class="timeline">
         <div class="timeline-item">
