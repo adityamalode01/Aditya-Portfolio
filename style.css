@@ -1,6 +1,12 @@
-/* Header Animation */
-header {
-    animation: fadeIn 1s ease-in-out;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 /* insta,x,github,linkedin floating animation */
 @keyframes float {
@@ -8,6 +14,53 @@ header {
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
 }
+
+/* Header Animation */
+header {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Typing Effect */
+.typing-text span::after {
+    content: "|";
+    display: inline-block;
+    animation: blink 0.7s infinite alternate;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Home image animation */
+/* .home-img img {
+    transition: transform 0.3s ease-in-out;
+} */
+
+/* .home-img img:hover {
+    transform: scale(1.05);
+} */
+
+.btn:hover {
+    box-shadow: 0px 0px 20px rgba(255, 75, 43, 0.8);
+}
+
+/* Social icons floating effect */
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+.social-icons a:nth-child(1) { animation: float 3s infinite ease-in-out; }
+.social-icons a:nth-child(2) { animation: float 3s infinite ease-in-out 0.3s; }
+.social-icons a:nth-child(3) { animation: float 3s infinite ease-in-out 0.6s; }
+.social-icons a:nth-child(4) { animation: float 3s infinite ease-in-out 0.9s; }
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 *{
     margin: 0;
