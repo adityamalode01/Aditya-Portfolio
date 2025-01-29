@@ -1,4 +1,7 @@
-
+/* Header Animation */
+header {
+    animation: fadeIn 1s ease-in-out;
+}
 /* insta,x,github,linkedin floating animation */
 @keyframes float {
     0% { transform: translateY(0px); }
